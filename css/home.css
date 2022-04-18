@@ -1,0 +1,56 @@
+img {
+    display: block;
+}
+
+.main-logo-section {
+    display: flex;
+    padding-left:48px;
+    justify-content: space-between;
+}
+
+#side-logo-header {
+    font-size:xx-large;
+}
+
+.side-logo {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 700px;
+    padding-top: 16px;
+    color: #565A2F;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.logo-image img {
+    float: left;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gallery {
+    display: flex;
+    overflow:hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
