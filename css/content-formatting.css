@@ -1,15 +1,20 @@
 img {
+    overflow: hidden;
     display: block;
+}
+
+#home-pic {
+    width: 700px;
+    height: fit-content;
+    border-radius: 4px;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
 }
 
 .main-logo-section {
     display: flex;
-    padding-left:48px;
+    align-items: center;
+    padding: 12px;
     justify-content: space-between;
-}
-
-#side-logo-header {
-    font-size:xx-large;
 }
 
 .side-logo {
@@ -19,14 +24,6 @@ img {
     width: 700px;
     padding-top: 16px;
     color: #565A2F;
-}
-
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
 }
 
 .logo-image img {
@@ -42,7 +39,7 @@ img {
     display: flex;
     overflow:hidden;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: -1rem -1rem;
     padding-bottom: 3rem;
 }
@@ -53,4 +50,18 @@ img {
     margin: 1rem;
     color: #fff;
     cursor: pointer;
+}
+
+.post-border {
+    background:#FFF; 
+    border:0; 
+    border-radius:3px; 
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+    margin: 1px;
+    max-width:540px; 
+    min-width:326px; 
+    padding:0; 
+    height: 99.375%;
+    width:99.375%; 
+    width:-webkit-calc(100% - 2px); 
 }
