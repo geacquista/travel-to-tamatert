@@ -1,0 +1,46 @@
+#carouselHomePage {
+    box-shadow: 1px 1px 2px #565A2F;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+.side-text-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    color: #565A2F;
+}
+
+.side-text-home h1{
+    font-size: calc(70% + 1.5vw + 1vh);
+    font-family: Poppins;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-between;
+    overflow:hidden;
+}
+
+#home-pic {
+    width: 400px;
+    height: fit-content;
+    border-radius: 4px;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+}
+
+div h2 {
+    text-align: center;
+}

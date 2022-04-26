@@ -21,11 +21,12 @@
     cursor: pointer;
   }
   .navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
-}
+  }
+
   .animated-icon1 span{
     display: block;
     position: absolute;
@@ -95,8 +96,8 @@
     margin-right: 0;
     width: 250px;
     height: 100%;
-    padding-top: 170px;
-    bottom:50px;
+    padding-top: 120px;
+    padding-left: 24px;
     background: #8F8649;
 }
 
@@ -115,6 +116,12 @@ nav ul {
     transition: font-size .15s ease-in-out, color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 .side-bar-link:hover{
-    color: #F8BF92;
     font-size: larger;
+    color: #fed8af;
+}
+
+.side-bar-link:target {
+  background-color: #FDEEE3;
+  color: #565A2F;
+  opacity: 75%;
 }

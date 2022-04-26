@@ -16,7 +16,28 @@ $(document).ready(function () {
             $("#content").css("margin-right", "0px");
         }
     });
+
+    $('.carousel').carousel();
+
+
+    // var currpos = $(window).scrollTop();
+    // var up = false;
+    // var newscroll;
+    // $(window).on('scroll', function () {
+    //     newscroll = $(window).scrollTop();
+    //     if (newscroll > currpos && !up) {
+    //         $('#header').animate().scrollTop();
+    //         up = !up;
+    //         console.log(up);
+    //     } else if(newscroll < currpos && up) {
+    //         $('#header').stop().fadeIn();
+    //         up = !up;
+    //     }
+    //     mypos = newscroll;
+    //     $('#header').stop().fadeOut();
+    // });
 });
+
 // $(document).ready(function(){
 //     $("#introduction").css("top", (($(window).height() - $("#introduction").height()) / 2) + "px");
 

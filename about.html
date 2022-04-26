@@ -6,13 +6,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Rural Tourism : Rabat, Morocco : D22">
       <meta name="author" content="Gabrielle Acquista">
-      <title>Travel Tamatert</title>
+      <title>Travel To Tamatert</title>
 
       <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css"/>
       <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
       <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
       <link href="css/style.css" rel="stylesheet">
       <link href="css/content-formatting.css" rel="stylesheet">
+      <link href="css/about.css" rel="stylesheet">
       <link href="css/sidebar.css" rel="stylesheet">
 
     </head>
@@ -20,49 +21,106 @@
       <div id="mainwrapper">
         <nav id="rightmenu" class="navbar-brand">
           <div class="innertube">
-            <h3>MENU</h3>
+            <div class="logo-image-sidebar">
+              <img src="imgs/round-1-2.png" alt="Tamatert, Morocco. Logo">
+            </div>
             <ul>
-              <li><a class="side-bar-link" href="index.html">Home</a></li>
-              <li><a class="side-bar-link" href="auberges.html">The Auberges</a> </li>
-              <li><a class="side-bar-link" href="about.html">About Tamatert</a></li>
-              <li><a class="side-bar-link" href="location.html">Location</a></li>
+              <li><a id="home" class="side-bar-link" href="index.html#home">Home</a></li>
+              <li><a id="about" class="side-bar-link has-submenu" href="about.html#about">About Tamatert</a>
+                <ul class="submenu collapse">
+                  <li><a class="nav-link" href="#">Tamatert Solstice </a></li>
+                </ul>
+              </li>
+              <li><a id="inns" class="side-bar-link has-submenu" href="auberges.html#inns">The Auberges</a>
+                <ul class="submenu collapse">
+                  <li><a class="nav-link" href="inns/atlas.html">Atlas Tamatert</a></li>
+                  <li><a class="nav-link" href="inns/dourr.html">Dourr Samra </a></li>
+                  <li><a class="nav-link" href="inns/hiba.html">Hiba Lodge </a></li>
+                  <li><a class="nav-link" href="inns/jardins.html">Les Jardins du Toubkal </a></li>
+                  <li><a class="nav-link" href="inns/kasbah.html">Kasbah Imlil </a></li>
+                </ul>
+              </li>
+              <li><a id="reviews" class="side-bar-link" href="guestbook.html#reviews">The Guest Book</a></li>
+              <li><a id="loc" class="side-bar-link" href="location.html#loc">Location</a></li>
+              <li><a id="gal" class="side-bar-link" href="gallery.html#gal">Gallery</a></li>
             </ul>
           </div>
         </nav>
         <header id="header">
           <div class="innertube">
             <div class="nav">
-              <h1>Travel Tamatert</h1>
+              <h1>Travel To Tamatert</h1>
               <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
                 <div class="animated-icon1"><span></span><span></span><span></span></div>
               </button>                
               </div>
             </div>
-          </div>
         </header>
 
         <div id="contentwrapper">
           <div id="content">
-            <div class="innertube main-logo-section">
-              <div class="side-logo">
-                <h1 id="side-logo-header">About Tamatert!</h1>
-                <p></p>
+            <div class="innertube main-section-about">
+              <div class="about-pic">
+                <img src="imgs/tamatert_brighter.jpg" alt="Tamatert">
               </div>
-                <div class="logo-image">
-                  <img src="imgs/3-4.png" alt="Tamatert, Morocco. Logo">
-                </div>
-            </div>
 
-            <div class="innertube">
-                <div id="content">
-                  <div class="gallery">
-                   
-                  </div>
-                  <!--close gallery -->
-                </div>
-                <!-- close content -->
+               <div class="about-text-main">
+                 <h1>About Tamatert</h1>
+                <p>
+                  Tamatert’s origins are largely undocumented and are passed down by word of mouth. 
+                  Tamatert began with a group of three Amazigh families that settled in the village. 
+                  Now the village comprises seven, close-knit families. 
+                  The French came to the region to trek around and summit Mount Toubkal, which they measured and 
+                  declared to be the highest peak in North Africa. Much of the documented information about 
+                  this region comes from the physical data collected by the French, so it excludes relevant 
+                  cultural or historical information.
+                </p>
+              </div> 
+            </div> 
+
+            <div class="innertube main-section-about">
+               <div class="">
+                 <h1>The Meaning of Tamatert</h1>
+                <p>
+                  There are several meanings of Tamatert that vary by family. 
+                  One of these meanings is “exposed land to the sun;” the 
+                  snow remains on the surrounding mountain tops, but melts 
+                  in the village as it is exposed to the sun for the entire 
+                  day. Another meaning of Tamatert is “an example.” This 
+                  meaning does not have a direct translation and might not 
+                  have as significant a cultural meaning in English; however,
+                   it can be interpreted in a number of ways. Being an 
+                   example or role model to another is one interpretation. 
+                   As of 2009, there was no road from Imlil to Tamatert, 
+                   only a footpath. Five years prior in 2004 a Swiss woman, 
+                   Jacqueline Brandt, established the village’s first known 
+                   lodging for visitors: Douar Samra. Brandt built a 
+                   traditional Amazigh house of pisé, wood, and stone with 
+                   comfortable beds and toilets for visitors to Tamatert. 
+                   The lodge became a part of the community, using bread 
+                   baked by neighbors and involving locals in management. 
+                   Since Douar Samra’s opening, several other inns have 
+                   opened in Tamatert, welcoming visitors to the village. 
+                </p>
+              </div> 
+            </div> 
+
+            <div class="innertube event-section-about">
+              <div class="about-pic">
+                <img src="imgs/cropped-sunset.jpg" alt="Tamatert">
               </div>
-              <!-- close innertube -->
+
+               <div class="about-text-solstice">
+                 <h1>Tamatert Solstice</h1>
+                <p>
+                  Tamatert is one of many villages in the town of Imlil, Marrakech, Morocco.
+                  It doesn't sit in the mountains where the snow sticks around, nor is it 
+                  in the town center hub. Tamatert is it's own getaway with it's own story.
+                  The Solstice is a gathering held in the village to celebrate it's own unique identity.
+                </p>
+              </div> 
+            </div> 
+          
             </div>
           <!-- close content -->
         </div> 
@@ -77,6 +135,5 @@
       </div>
       <!-- close mainwrapper -->
   </main>
-
-    <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </html>

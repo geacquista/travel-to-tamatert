@@ -10,26 +10,33 @@ body {
     src: url(CopperplateGothicLight.ttf);
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-BoldItalic.ttf);
+}
+
 #header {
     background: #565A2F;
+    align-items: center;
     height: 100px;
     width: 100%;
     top: 0;
     clear: both;
     overflow: visible;
     position: fixed;
-    z-index: 1;
-    position: fixed;
+    z-index: 9999;
+    transition: top 0.3s;
 }
 
 #header h1 {
     color: #FDEEE3;
     font-family: Copperplate;
     margin: 0;
-    text-align: center;
-    margin-left:24px;
-    padding-top: 16px;
-    font-size: 8ex;
+    text-align: left;
+    width: 70%;
+    padding-left:16px;
+    font-size: calc(100% + 3vw + 1vh);
+    /* font-size: 8ex; */
 }
 
 #header h2 {
@@ -41,7 +48,10 @@ body {
 }
 
 .nav {
+    padding-left: 24px;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 #mainwrapper {
@@ -60,8 +70,10 @@ body {
 
 #content {
     margin-right: 0px; /* Width of '#rightmenu' and '#leftmenu' combined. */
-    padding: 24px;
-    max-height:max-content;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 24px;
+    max-height: max-content;
     bottom: 0;
     top: 0; 
 
@@ -73,7 +85,7 @@ body {
     background: #565A2F;
     text-align: center;
     bottom: 0;
-    position: fixed;
+    position: relative;
     padding: 5px 0;
 }
 
@@ -82,10 +94,18 @@ body {
 }
 
 .innertube{
-    margin: 16px; /* Padding for content */
     margin-top: 0;
+    height: 100%;
 }
 
 p {
     color: #565A2F;
+}
+
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+  }
+
+.carousel-caption {
+    font-family: Poppins;
 }

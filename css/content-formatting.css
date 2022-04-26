@@ -3,37 +3,32 @@ img {
     display: block;
 }
 
-#home-pic {
-    width: 700px;
-    height: fit-content;
-    border-radius: 4px;
-    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
-}
-
-.main-logo-section {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    justify-content: space-between;
-}
-
 .side-logo {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 700px;
-    padding-top: 16px;
+    width: 100%;
+    padding-bottom: 24px;
     color: #565A2F;
 }
 
-.logo-image img {
+
+.logo-image, img {
     float: left;
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
+.logo-image-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+
+
 
 .gallery {
     display: flex;
@@ -41,7 +36,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: -1rem -1rem;
-    padding-bottom: 3rem;
+    padding: 12px;
 }
 
 .gallery-item {
