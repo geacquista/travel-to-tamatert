@@ -1,3 +1,15 @@
+
+@font-face {
+    font-family: Poppins-Reg;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-IT;
+    src: url(Poppins-SemiBoldItalic.ttf);
+}
+
+
 .main-section-inn {
     display: flex;
     flex-direction: row;
@@ -7,28 +19,57 @@
     color: #565A2F;
 }
 
+h1 {
+    font-family: Poppins-Reg;
+    color: #565A2F;
+}
+
+.inn-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
 .inn-pic img {
-    width: 500px;
+    width: 400px;
     height: fit-content;
-    margin-left:24px;
-    margin-right:48px;
-    margin-bottom:24px;
+    position: relative; 
+    margin-bottom:8px;
+    margin-right: 0;
     border-radius: 4px;
     box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
 }
 
-.inn-section {
-    display: flex;
-    flex-direction: row;
-    float: left;
-    width: 100%;
-    padding: 24px;
-    color: #565A2F;
+.content {
+    justify-content: center;
 }
 
 .inn-text-main {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
-    margin: 0px 12px 0px 24px;
+    flex-wrap: wrap;
+    padding: 24px;
 }
+
+ 
+ h2 { 
+    color: #565A2F;
+    position: relative; 
+    z-index: -1;
+    padding: 8px;
+    width: fit-content;
+    background-color: white;
+    opacity: 80%;
+    font-family: Poppins-Reg;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+    border-radius: 4px;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ .whats-app-emphasis {
+     font-family: Poppins-IT;
+ }

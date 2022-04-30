@@ -3,7 +3,7 @@
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: Poppins-Reg;
     src: url(Poppins-Regular.ttf);
 }
 
@@ -22,7 +22,20 @@
 
 .side-text-home h1{
     font-size: calc(70% + 1.5vw + 1vh);
-    font-family: Poppins;
+    font-family: Poppins-Reg;
+}
+
+h2 {
+    font-family: Poppins-Reg;
+    color: #565A2F;
+}
+
+h5 {
+    font-family: Poppins-Reg;
+}
+
+.carousel-caption {
+    font-family: Poppins-Reg;
 }
 
 .main-section {
@@ -43,4 +56,82 @@
 
 div h2 {
     text-align: center;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.load {
+    width: 70px;
+    height: 70px;
+    border: 0.6rem solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    animation: loader 700ms linear infinite;
+}
+
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+    fill: #fff;
 }

@@ -13,7 +13,7 @@
       <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
       <link href="css/style.css" rel="stylesheet">
       <link href="css/content-formatting.css" rel="stylesheet">
-      <link href="css/auberges.css" rel="stylesheet">
+      <link href="css/location.css" rel="stylesheet">
       <link href="css/sidebar.css" rel="stylesheet">
 
     </head>
@@ -22,27 +22,47 @@
         <nav id="rightmenu" class="navbar-brand">
           <div class="innertube">
             <div class="logo-image-sidebar">
-              <img src="imgs/round-1-2.png" alt="Tamatert, Morocco. Logo">
+              <img src="imgs/FINAL-LOGO.png" alt="Tamatert, Morocco. Logo">
             </div>
             <ul>
               <li><a id="home" class="side-bar-link" href="index.html#home">Home</a></li>
-              <li><a id="about" class="side-bar-link has-submenu" href="about.html#about">About Tamatert</a>
-                <ul class="submenu collapse">
-                  <li><a class="nav-link" href="#">Tamatert Solstice </a></li>
-                </ul>
+              <li>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                  <a id="about" class="side-bar-link" href="about.html#about">About</a>
+                  <button id="dropdown-btn-0">
+                    <svg id="drop-icon-0" viewBox="0 0 320 512" title="angle-down" >
+                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdown-container-0">
+                  <ul>
+                    <li><a class="drop-link" href="solstice.html">Tamatert Solstice</a></li>
+                  </ul>
+                </div>
               </li>
-              <li><a id="inns" class="side-bar-link has-submenu" href="auberges.html#inns">The Auberges</a>
-                <ul class="submenu collapse">
-                  <li><a class="nav-link" href="inns/atlas.html">Atlas Tamatert</a></li>
-                  <li><a class="nav-link" href="inns/dourr.html">Douar Samra </a></li>
-                  <li><a class="nav-link" href="inns/hiba.html">Hiba Lodge </a></li>
-                  <li><a class="nav-link" href="inns/jardins.html">Les Jardins du Toubkal </a></li>
-                  <li><a class="nav-link" href="inns/kasbah.html">Kasbah Imlil </a></li>
-                </ul>
+              <li>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                  <a id="inns" class="side-bar-link" href="auberges.html#inns">Auberges</a>
+                  <button id="dropdown-btn-1">
+                    <svg id="drop-icon" viewBox="0 0 320 512" title="angle-down" >
+                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdown-container-1">
+                  <ul>
+                    <li><a class="drop-link" href="atlas.html">Atlas Tamatert</a></li>
+                    <li><a class="drop-link" href="dourr.html">Douar Samra </a></li>
+                    <li><a class="drop-link" href="hiba.html">Hiba Lodge </a></li>
+                    <li><a class="drop-link" href="jardins.html">Les Jardins du Toubkal </a></li>
+                    <li><a class="drop-link" href="kasbah.html">Kasbah Imlil </a></li>
+                  </ul>
+                </div>                
               </li>
               <li><a id="reviews" class="side-bar-link" href="guestbook.html#reviews">The Guest Book</a></li>
               <li><a id="loc" class="side-bar-link" href="location.html#loc">Location</a></li>
-              <li><a id="gal" class="side-bar-link" href="gallery.html#gal">Gallery</a></li>
+              <li><a id="gal" class="side-bar-link" style="padding-bottom: 70px;" href="gallery.html#gal">Gallery</a></li>
             </ul>
           </div>
         </nav>
@@ -59,29 +79,50 @@
 
         <div id="contentwrapper">
           <div id="content">
-            <div class="innertube main-section-inn">
-               <div class="inn-text-main">
+            <div class="innertube main-section">
+               <div class="text-main">
                  <h1>Location</h1>
                 <p>
-                  Stuff about the location and how to get there.
+                  Tamatert is located in the High Atlas region of Morocco. Mount Toubkal, the highest peak in North Africa, is just a two day hike away.  
+                </p>
+                <p>
+                  An hour and 30 minutes from Marrakech and a ten minute drive from Imlil town center, Tamatert is an escape from the busy city life without traveling too far. 
+                </p>
+                <p>
+                  There are a lot of ways to get to Tamatert. From within Morocco you can get to Marrakech by train, taxi, bus, or private car. From there you can take a taxi or private car through beautiful, winding mountain roads to Tamatert. You can also drive yourself too (there’s parking!). 
                 </p>
               </div> 
               <div class="inn-pic">
-                <p>this is a map</p>
-                <img class="img-fluid" src="imgs/atlasTamtert.jpg" alt="Tamatert">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.8394103633564!2d-7.906320649299324!3d31.141974272753973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb00eee3b4c5b71%3A0x3f1ff328550a4ad8!2sTamatert!5e0!3m2!1sen!2sma!4v1651353637193!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div> 
             </div>
 
-            <div class="innertube inn-section">
-              <div class="inn-pic">
-                <img class="img-fluid" src="imgs/atlasTamtert.jpg" alt="Tamatert">
-              </div> 
-              <div class="inn-pic">
-                <img class="img-fluid" src="imgs/hiba.jpg" alt="Tamatert">
-              </div> 
-              <div class="inn-pic">
-                <img class="img-fluid" src="imgs/lesjardins.jpg" alt="Tamatert">
-              </div> 
+            <div class="innertube extra-section">
+              <h1>Notable Places Nearby</h1>
+              <div class="row">
+                <div class=" col-lg-4 col-md-12 mb-4 mb-lg-0 other-location">
+                  <a href="https://en.wikipedia.org/wiki/Imlil,_Marrakesh-Safi">
+                    <img class="img-fluid" src="imgs/imliltown.jpeg" alt="Tamatert">
+                  </a>
+                  <h2>Imlil Town Center</h2>
+                  <p>Bustling town center with hiking gear (ask your auberge for renting details!), shops, restaurants, and cafes. As you walk through the streets you’ll sese shops selling local goods such as almonds, walnuts, and amlou as well as traditional Moroccan crafts. </p>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 other-location">
+                  <a href="https://jinn.fandom.com/wiki/Shamhurish">
+                    <img class="img-fluid" src="imgs/sidi.jpg" alt="Tamatert">
+                  </a>
+                  <h2>Sidi Chamharouch</h2>
+                  <p>A religious shrine frequently visited by pilgrims.</p>
+                </div>
+                <div class=" col-lg-4 col-md-12 mb-4 mb-lg-0 other-location">
+                  <a href="https://www.tripadvisor.com/Attraction_Review-g12398119-d20295172-Reviews-Cascade_Imlil-Aroumd_Imlil_Marrakech_Safi.html">
+                    <img class="img-fluid" src="imgs/cascade.jpg" alt="Tamatert">
+                  </a>
+                  <h2>Imlil Cascades</h2>
+                  <p> Just 15 minutes outside Imlil you can find this series of small waterfalls. On the relatively easy walk to the cascades one passes Amazigh villages, walnut groves, and apple trees.
+                  </p>
+                </div>
+              </div>             
             </div> 
           
           </div>
@@ -99,4 +140,31 @@
       <!-- close mainwrapper -->
   </main>
   <script type="text/javascript" src="script.js"></script>
+  <script>
+    var dropdownAbout = document.getElementById("dropdown-btn-0");
+    var i;
+
+    dropdownAbout.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = document.getElementById("dropdown-container-0");
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+
+    var dropdownInns = document.getElementById("dropdown-btn-1");
+    var i;
+
+    dropdownInns.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = document.getElementById("dropdown-container-1");
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+  </script>
 </html>

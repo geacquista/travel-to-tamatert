@@ -22,27 +22,47 @@
         <nav id="rightmenu" class="navbar-brand">
           <div class="innertube">
             <div class="logo-image-sidebar">
-              <img src="imgs/round-1-2.png" alt="Tamatert, Morocco. Logo">
+              <img src="imgs/FINAL-LOGO.png" alt="Tamatert, Morocco. Logo">
             </div>
             <ul>
               <li><a id="home" class="side-bar-link" href="index.html#home">Home</a></li>
-              <li><a id="about" class="side-bar-link has-submenu" href="about.html#about">About Tamatert</a>
-                <ul class="submenu collapse">
-                  <li><a class="nav-link" href="#">Tamatert Solstice </a></li>
-                </ul>
+              <li>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                  <a id="about" class="side-bar-link" href="about.html#about">About</a>
+                  <button id="dropdown-btn-0">
+                    <svg id="drop-icon-0" viewBox="0 0 320 512" title="angle-down" >
+                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdown-container-0">
+                  <ul>
+                    <li><a class="drop-link" href="solstice.html">Tamatert Solstice</a></li>
+                  </ul>
+                </div>
               </li>
-              <li><a id="inns" class="side-bar-link has-submenu" href="auberges.html#inns">The Auberges</a>
-                <ul class="submenu collapse">
-                  <li><a class="nav-link" href="inns/atlas.html">Atlas Tamatert</a></li>
-                  <li><a class="nav-link" href="inns/dourr.html">Dourr Samra </a></li>
-                  <li><a class="nav-link" href="inns/hiba.html">Hiba Lodge </a></li>
-                  <li><a class="nav-link" href="inns/jardins.html">Les Jardins du Toubkal </a></li>
-                  <li><a class="nav-link" href="inns/kasbah.html">Kasbah Imlil </a></li>
-                </ul>
+              <li>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                  <a id="inns" class="side-bar-link" href="auberges.html#inns">Auberges</a>
+                  <button id="dropdown-btn-1">
+                    <svg id="drop-icon" viewBox="0 0 320 512" title="angle-down" >
+                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdown-container-1">
+                  <ul>
+                    <li><a class="drop-link" href="atlas.html">Atlas Tamatert</a></li>
+                    <li><a class="drop-link" href="dourr.html">Douar Samra </a></li>
+                    <li><a class="drop-link" href="hiba.html">Hiba Lodge </a></li>
+                    <li><a class="drop-link" href="jardins.html">Les Jardins du Toubkal </a></li>
+                    <li><a class="drop-link" href="kasbah.html">Kasbah Imlil </a></li>
+                  </ul>
+                </div>                
               </li>
               <li><a id="reviews" class="side-bar-link" href="guestbook.html#reviews">The Guest Book</a></li>
               <li><a id="loc" class="side-bar-link" href="location.html#loc">Location</a></li>
-              <li><a id="gal" class="side-bar-link" href="gallery.html#gal">Gallery</a></li>
+              <li><a id="gal" class="side-bar-link" style="padding-bottom: 70px;" href="gallery.html#gal">Gallery</a></li>
             </ul>
           </div>
         </nav>
@@ -136,4 +156,31 @@
       <!-- close mainwrapper -->
   </main>
   <script type="text/javascript" src="script.js"></script>
+  <script>
+    var dropdownAbout = document.getElementById("dropdown-btn-0");
+    var i;
+
+    dropdownAbout.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = document.getElementById("dropdown-container-0");
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+
+    var dropdownInns = document.getElementById("dropdown-btn-1");
+    var i;
+
+    dropdownInns.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = document.getElementById("dropdown-container-1");
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+  </script>
 </html>

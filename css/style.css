@@ -11,8 +11,12 @@ body {
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(Poppins-BoldItalic.ttf);
+    font-family: Poppins-Reg;
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url(Poppins-Light.ttf);
 }
 
 #header {
@@ -41,6 +45,7 @@ body {
 
 #header h2 {
     color: #FDEEE3;
+    font-family: Poppins-Reg;
     font-size: smaller;
     margin: 0;
     padding-top: 15px;
@@ -79,6 +84,11 @@ body {
 
 }
 
+p {
+    font-family: Poppins-Light;
+    color: #565A2F;
+}
+
 #footer{ 
     clear: left;
     width: 100%;
@@ -98,14 +108,8 @@ body {
     height: 100%;
 }
 
-p {
-    color: #565A2F;
-}
 
 .text-responsive {
     font-size: calc(100% + 1vw + 1vh);
   }
 
-.carousel-caption {
-    font-family: Poppins;
-}
