@@ -3,6 +3,13 @@
     src: url(Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: Poppins-IT;
+    src: url(Poppins-SemiBoldItalic.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+
 .main-section-about {
     display: flex;
     flex-direction: row;
@@ -12,7 +19,7 @@
     color: #565A2F;
 }
 h1 {
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
 }
 .about-pic img {
     width: 500px;
@@ -40,4 +47,29 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 0px 48px 0px 0px;
+}
+
+.about-pic-sun img{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    align-content: center;
+    float: right; 
+    margin: 16px;
+    margin-top: 64px;
+}
+
+.main-section-about-solstice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+    padding: 24px;
+    color: #565A2F;
+    text-align: justify;
+}
+
+.emphasis {
+    font-family: Poppins-IT;
 }

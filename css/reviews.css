@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Poppins-IT;
+    src: url(Poppins-SemiBoldItalic.ttf);
+}
+
+.side-review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-reviews {
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    align-items: center;
+    width: 70%;
+    padding: 12px;
+    color: #565A2F;
+    text-align: center;
+}
+
+.main-reviews img {
+    margin: 12px;
+}
+
+.emphasis {
+    font-family: Poppins-IT;
+    margin: 12px;
+}
+
+.add-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-top: 12px;
+    margin-left: 48px;
+    color: #565A2F;
+    text-align: left;
+}
+
+.newReview {
+    background-color: navy;
+}

@@ -3,6 +3,12 @@
     src: url(CopperplateGothicLight.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+
+ul li a {
+  font-family: 'EB Garamond', serif;
+}
+
 .animated-icon1 {
     margin-right:24px;
     width: 30px;
@@ -123,9 +129,8 @@ nav ul {
 }
 
 .side-bar-link:target {
-  background-color: #FDEEE3;
-  color: #565A2F;
-  opacity: 75%;
+  font-size: larger;
+    color: #fed8af;
 }
 
 #dropdown-btn-1 {
@@ -158,6 +163,10 @@ nav ul {
 
 .drop-link:hover{
   font-size: 17px;
+  color: #fed8af;
+}
+
+.drop-link:target {
   color: #fed8af;
 }
 

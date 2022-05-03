@@ -1,8 +1,4 @@
-
-@font-face {
-    font-family: Poppins-Reg;
-    src: url(Poppins-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 
 .main-section {
     display: flex;
@@ -18,7 +14,7 @@
 }
 
 h1 {
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
     color: #565A2F;
     margin-bottom: 24px;
 }
@@ -37,11 +33,11 @@ h1 {
 
  
  h2 { 
+    font-family: 'EB Garamond', serif;
     color: #565A2F;
     position: relative; 
     padding: 8px;
     width: fit-content;
-    font-family: Poppins-Reg;
  }
 
  a {

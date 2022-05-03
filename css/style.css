@@ -10,6 +10,8 @@ body {
     src: url(CopperplateGothicLight.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+
 @font-face {
     font-family: Poppins-Reg;
     src: url(Poppins-Regular.ttf);
@@ -17,6 +19,11 @@ body {
 @font-face {
     font-family: Poppins-Light;
     src: url(Poppins-Light.ttf);
+}
+
+h1,h2 {
+    font-family: 'EB Garamond', serif;
+    color: #565A2F;
 }
 
 #header {
@@ -45,7 +52,7 @@ body {
 
 #header h2 {
     color: #FDEEE3;
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
     font-size: smaller;
     margin: 0;
     padding-top: 15px;

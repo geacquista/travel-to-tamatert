@@ -1,13 +1,9 @@
-
-@font-face {
-    font-family: Poppins-Reg;
-    src: url(Poppins-Regular.ttf);
-}
-
 @font-face {
     font-family: Poppins-IT;
     src: url(Poppins-SemiBoldItalic.ttf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 
 
 .main-section-inn {
@@ -20,7 +16,7 @@
 }
 
 h1 {
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
     color: #565A2F;
 }
 
@@ -61,7 +57,7 @@ h1 {
     width: fit-content;
     background-color: white;
     opacity: 80%;
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
     box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
     border-radius: 4px;
  }

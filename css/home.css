@@ -7,6 +7,8 @@
     src: url(Poppins-Regular.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+
 .side-text-home {
     display: flex;
     flex-direction: column;
@@ -22,16 +24,16 @@
 
 .side-text-home h1{
     font-size: calc(70% + 1.5vw + 1vh);
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
 }
 
 h2 {
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
     color: #565A2F;
 }
 
 h5 {
-    font-family: Poppins-Reg;
+    font-family: 'EB Garamond', serif;
 }
 
 .carousel-caption {

@@ -1,0 +1,10 @@
+The photos used on this site were taken by the authors of this site, as well as
+from Creative Commons, Instagram, Facebook, and the following websites:
+- https://www.douar-samra.net/
+- http://www.kasbah-imlil.com/
+- http://hibalodge.com/gallery/
+
+Additionally, inspiration for this landing page stemmed from these helpful 
+online tools:
+- https://codepen.io/
+- https://www.geeksforgeeks.org/

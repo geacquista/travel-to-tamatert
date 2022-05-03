@@ -13,7 +13,7 @@
       <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
       <link href="css/style.css" rel="stylesheet">
       <link href="css/content-formatting.css" rel="stylesheet">
-      <link href="css/home.css" rel="stylesheet">
+      <link href="css/reviews.css" rel="stylesheet">
       <link href="css/sidebar.css" rel="stylesheet">
 
     </head>
@@ -78,22 +78,33 @@
         </header>
 
         <div id="contentwrapper">
-          <div id="content">
-            <div class="innertube main-section">
-                <h2>Digital Guest Book</h2>
+          <div id="content" class="side-review">
+            <div class="innertube main-reviews" id="review-section">
+              <h2>Digital Guest Book</h2>
 
-               <div class="side-text-home">
-                <p>
-                </p>
-              </div> 
-            </div> 
+              <img class="img-fluid w-100" src="imgs/livvieblog.jpg" alt="blog1">
+              <img class="img-fluid w-100" src="imgs/reyablog.jpg" alt="blog2">
+              <p class="emphasis">This page is purely a proof of concept. To date 5/2/2022, you cannot add a blog style review
+                to the page, however we show what it may look like if implemented properly.
+              </p>
+          </div> 
 
-
-
-            <div class="innertube" style="margin-top:24px">
-              
-          
-            </div>
+          <div class="innertube add-reviews">
+            <h2 class="w-100" style="text-align: left;">Add A Review</h2>
+              <form id="form">
+                <!-- DOES NOT WORK -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="blog">Blog your stay!:</label><br>
+                <textarea id="review" cols="20" rows="10"></textarea> <br><br>
+                <label for="myfile">Upload Picture/Video:</label>
+                  <input type="file" id="myfile" name="myfile"><br><br>
+                <!-- <label for="myfile">Click to add another file:</label>
+                <button id="addFile">+</button><br><br> -->
+                <input type="submit" value="Submit">
+              </form>
+          </div>
+          </div>
           <!-- close content -->
         </div> 
         <!-- close contentwrapper -->
@@ -109,6 +120,56 @@
   </main>
   <script type="text/javascript" src="script.js"></script>
   <script>
+    // document.getElementById("form").onsubmit = function() {
+
+    //   var newReview = document.createElement("div");
+    //   var name = document.getElementById('name').nodeValue;
+    //   var blog = document.getElementById('review').nodeName;
+    //   var image = document.createElement("myfile");
+
+    //   // text.append(name);
+    //   // text.append(document.createElement('br'));
+    //   // text.append(blog);
+
+    //   // Append the elements
+    //   newReview.appendChild(name);
+    //   newReview.appendChild(blog);
+    //   newReview.appendChild(image);
+
+    //   newReview.classList.add("newReview");
+
+    //   document.getElementById('review-section').appendChild(newReview);
+
+    // };     
+
+      document.addEventListener("DOMContentLoaded", function(){
+      document.querySelectorAll('.sidebar .side-bar-link').forEach(function(element){
+        
+        element.addEventListener('click', function (e) {
+
+          let nextEl = element.nextElementSibling;
+          let parentEl  = element.parentElement;	
+
+            if(nextEl) {
+                e.preventDefault();	
+                let mycollapse = new bootstrap.Collapse(nextEl);
+                
+                if(nextEl.classList.contains('show')){
+                  mycollapse.hide();
+                } else {
+                    mycollapse.show();
+                    // find other submenus with class=show
+                    var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                    // if it exists, then close all of them
+                    if(opened_submenu){
+                      new bootstrap.Collapse(opened_submenu);
+                    }
+                }
+            }
+        }); // addEventListener
+      }) // forEach
+    }); 
+
     var dropdownAbout = document.getElementById("dropdown-btn-0");
     var i;
 
@@ -134,5 +195,33 @@
           dropdownContent.style.display = "block";
         }
       });
+    
   </script>
 </html>
+
+<!-- <!doctype html>
+
+        <div id="contentwrapper">
+          <div id="content wrapper">
+            <div class="innertube main-reviews" >
+                <h2>Digital Guest Book</h2>
+
+                <img class="img-fluid w-100" src="imgs/livvieblog.jpg" alt="blog1">
+                <img class="img-fluid w-100" src="imgs/reyablog.jpg" alt="blog2">
+                <p class="emphasis">This page is purely a proof of concept. To date 5/2/2022, you cannot add a blog style review
+                  to the page, however we show what it may look like if implemented properly.
+                </p>
+            </div> 
+
+            <div class="innertube add-reviews">
+                add review
+            </div>
+
+          </div> 
+        </div>
+        
+
+      </div>
+  </main>
+
+</html> -->
